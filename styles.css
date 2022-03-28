@@ -1,0 +1,138 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:  1rem;
+	background-image: url("images/bg-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*
+---------------
+MAIN LAYOUT
+---------------
+*/
+
+.logo-header {
+	padding: 4.057em 13.75em 0 10.313em;
+	position: absolute;
+}
+
+.container {
+	display:  flex;
+}
+
+.newsletter-signup {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 4.057em 13.75em 0 10.313em;
+}
+
+.newsletter-img {
+	height: 100vh;
+}
+
+/*
+---------------
+FORM
+---------------
+*/
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#email-collector {
+	padding-top: 2.5em;
+	position: relative;
+}
+
+input {
+	width: 77.5%;
+	max-width: 445px;
+	height: 56px;
+	border: 1px solid #CE9898;
+	border-radius: 28px;
+	color: #CE9898;
+	padding: 0 2rem;
+	color: #423A3A;
+	line-height: 1.75rem;
+	font-weight: 400;
+}
+
+input::placeholder {
+	color: #CE9898;
+}
+
+.btn {
+	all: unset;
+	position: absolute;
+	cursor: pointer;
+	background-color: #F8BFBF;
+	background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #F8BFBF, #EE8C8C);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 22.5%;
+	height: 56px;
+	margin-left: -5em;
+	text-align: center;
+	border: 1px solid #CE9898;
+	border-radius: 28px;
+	color: #423A3A;
+	box-shadow: 0 15px 20px rgba(198, 110, 110, 0.25);
+}
+
+/*
+---------------
+TYPOGRAPHY
+
+.btn::placeholder {
+	color: #CE9898;
+	line-height: 1.75rem;
+	font-weight: 400;
+	opacity: 0.5;
+}
+
+
+---------------
+*/
+
+.opening-announcement {
+	font-size: 1rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	padding-top: 2rem;
+}
+
+.newsletter-title {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 4rem;
+	display: block;
+	white-space: pre-line;
+	letter-spacing: 1.083rem;
+	line-height: 4rem;
+}
+
+.opening-announcement,
+.newsletter-title{
+	color: #CE9898;
+}
+
+.coming-soon {
+	font-weight: 600;
+	line-height: 4.438rem;
+	color: #423A3A;
+}
+
+/*
+NOTES
+background:  linear-gradient(to right, #FFF1F1, #FFFFFF);
+*/
