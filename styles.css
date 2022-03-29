@@ -71,6 +71,18 @@ input::placeholder {
 	color: #CE9898;
 }
 
+input:focus:invalid {
+	border: 1px solid  #F96464;
+	background: url("images/icon-error.svg") 80% 50% no-repeat;
+	color: #F96464;
+}
+
+input:required:valid,
+input:required:focus:valid,
+input:active {
+	border: 1px solid #EE8B8B;
+}
+
 .btn {
 	all: unset;
 	position: absolute;
@@ -92,15 +104,6 @@ input::placeholder {
 /*
 ---------------
 TYPOGRAPHY
-
-.btn::placeholder {
-	color: #CE9898;
-	line-height: 1.75rem;
-	font-weight: 400;
-	opacity: 0.5;
-}
-
-
 ---------------
 */
 
@@ -131,8 +134,3 @@ TYPOGRAPHY
 	line-height: 4.438rem;
 	color: #423A3A;
 }
-
-/*
-NOTES
-background:  linear-gradient(to right, #FFF1F1, #FFFFFF);
-*/
