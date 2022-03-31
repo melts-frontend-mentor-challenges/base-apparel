@@ -81,6 +81,7 @@ input::placeholder {
 }
 
 .input-control .error {
+	padding: 1rem 2rem;
 	color: #F96464;
 }
 

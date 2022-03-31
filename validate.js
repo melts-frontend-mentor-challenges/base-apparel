@@ -30,10 +30,8 @@ const isValidEmail = email => {
 
 const validateEmail = () => {
     const emailValue = email.value.trim();
-    if(emailValue === '') {
-        setError(email, 'Email is required');
-    } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Provide a valid email address');
+    if (emailValue === '' || !isValidEmail(emailValue)) {
+        setError(email, 'Provide a valid email');
     } else {
         setSuccess(email);
     }
