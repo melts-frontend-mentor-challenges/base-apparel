@@ -71,6 +71,24 @@ input::placeholder {
 	color: #CE9898;
 }
 
+.input-control.success input {
+	border-color: rgb(127, 156, 109);	
+}
+
+.input-control.error input {
+	border: 1px solid  #F96464;
+	background: url("images/icon-error.svg") 80% 50% no-repeat;	
+}
+
+.input-control .error {
+	color: #F96464;
+}
+
+.input-control input:focus {
+	outline: 0;
+}
+
+/*
 input:focus:invalid {
 	border: 1px solid  #F96464;
 	background: url("images/icon-error.svg") 80% 50% no-repeat;
@@ -81,7 +99,7 @@ input:required:valid,
 input:required:focus:valid,
 input:active {
 	border: 1px solid #EE8B8B;
-}
+}*/
 
 .btn {
 	all: unset;

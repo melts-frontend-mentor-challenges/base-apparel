@@ -1,7 +1,7 @@
 const emailCollector = document.getElementById("email-collector");
 const email = document.getElementById("email");
 
-emailCollector.addEventListener('submit', e=>{
+emailCollector.addEventListener('submit', e => {
     e.preventDefault();
 
     validateEmail();
