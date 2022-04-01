@@ -16,12 +16,12 @@ const setError = (element, message) => {
 }
 
 const setSuccess = element => {
-    const inputControl = element.parentElementl
-    const errorDisplay= input.querySelector('.error');
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
-    inputControl.classList.add('error');
-}
+    inputControl.classList.remove('error');
+};
 
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
