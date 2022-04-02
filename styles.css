@@ -78,7 +78,11 @@ input::placeholder {
 }
 
 .input-control.success input {
-	border-color: rgb(127, 156, 109);	
+	border-color: #EE8B8B;	
+}
+
+.input-control #success {
+	color: #EE8B8B;
 }
 
 .input-control.error input {
