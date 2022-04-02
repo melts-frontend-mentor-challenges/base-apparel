@@ -31,10 +31,13 @@ MAIN LAYOUT
 	flex-direction: column;
 	justify-content: center;
 	padding: 4.057em 13.75em 0 10.313em;
+	width: 57.6%;
 }
 
 .newsletter-img {
 	height: 100vh;
+	width: 42.4%;
+	object-fit: cover;
 }
 
 .newsletter-img-mobile {
@@ -150,7 +153,7 @@ MEDIA QUERIES
 ---------------
 */
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
 	.input-control.error input {
 		background: url("images/icon-error.svg") 72% 50% no-repeat;	
 	}
