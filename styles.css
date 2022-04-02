@@ -78,11 +78,11 @@ input::placeholder {
 }
 
 .input-control.success input {
-	border-color: #EE8B8B;	
+	border-color:#CE9898;	
 }
 
-.input-control #success {
-	color: #EE8B8B;
+.input-control.success #successMessage {
+	color: #423A3A;
 }
 
 .input-control.error input {
@@ -108,6 +108,7 @@ input::placeholder {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 22.5%;
+	max-width: 100px;
 	height: 56px;
 	margin-left: -5em;
 	text-align: center;
@@ -128,6 +129,7 @@ TYPOGRAPHY
 	line-height: 1.75rem;
 	font-weight: 400;
 	padding-top: 2rem;
+	max-width: 500px;
 }
 
 .newsletter-title {

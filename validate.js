@@ -34,7 +34,7 @@ const validateEmail = () => {
         setError(email, 'Please provide a valid email');
     } else {
         setSuccess(email);
-        let successDisplay = document.getElementById("success");
+        let successDisplay = document.getElementById("successMessage");
         successDisplay.textContent += "Thank you for subscribing to our newsletter.";
     }
 }
