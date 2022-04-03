@@ -67,6 +67,7 @@ input {
 	border: 1px solid #CE9898;
 	border-radius: 28px;
 	color: #CE9898;
+	background: #FFF4F4;
 	padding: 0 2rem;
 	color: #423A3A;
 	line-height: 1.75rem;
@@ -103,12 +104,10 @@ input::placeholder {
 	all: unset;
 	position: absolute;
 	cursor: pointer;
-	background-color: #F8BFBF;
-	background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #F8BFBF, #EE8C8C);
+	background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #F8BFBF, #EE8B8B);
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 22.5%;
-	max-width: 100px;
+	width: 100px;
 	height: 56px;
 	margin-left: -5em;
 	text-align: center;
@@ -117,6 +116,18 @@ input::placeholder {
 	color: #423A3A;
 	box-shadow: 0 15px 20px rgba(198, 110, 110, 0.25);
 }
+
+.btn:focus,
+.btn:active,
+.btn:hover {
+	background-color: #F8BFBF;
+	background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #F8BFBF, rgba(255, 255, 255, .5));
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+	border: 1px solid #F8BFBF;
+}
+
 
 /*
 ---------------
@@ -168,15 +179,25 @@ MEDIA QUERIES
 @media (max-width: 770px) {
 	body {
 		background-image: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+		background-color: #FFF4F4;
 	}
 
 	.container {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.newsletter-signup {
 		flex-direction: column;
+		align-items: center;
 		padding: 4em 2em 3em 2em;
+		width: 100%;
+	}
+
+	.form-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.logo-header {
@@ -185,12 +206,13 @@ MEDIA QUERIES
 	}
 
 	.opening-announcement,
-	.newsletter-title {
+	.newsletter-title,
+	.coming-soon {
 		text-align: center;
 	}
 
 	.opening-announcement {
-		padding: 1rem 0 2rem 0;
+		padding: 1rem 2rem 2rem 2rem;
 	}
 
 	.newsletter-img {
@@ -202,8 +224,18 @@ MEDIA QUERIES
 		width: 100%;
 		order: -1;
 	}
-
+	
 	#email-collector {
 		padding-top: 0;
+		min-width: 311px;
+		width: 27.813rem;
+		margin-left: 2em;
 	}
+
+	.btn {
+		width: 64px; 
+		margin-left: -4em;
+
+	}
+
 }
