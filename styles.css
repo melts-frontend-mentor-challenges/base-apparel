@@ -239,3 +239,22 @@ MEDIA QUERIES
 	}
 
 }
+
+@media (max-width: 340px) {
+	.newsletter-title{
+		font-size: 2.5rem;
+	}
+
+	.opening-announcement {
+		max-width: 260px;
+	}
+
+	#email-collector {
+		min-width: 250px;
+	}
+
+	.opening-announcement,
+	#email-collector {
+		font-size: 0.875;
+	}
+}
