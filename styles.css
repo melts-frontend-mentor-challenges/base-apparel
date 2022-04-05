@@ -87,6 +87,14 @@ input {
 	font-weight: 400;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #CE9898 !important;
+}
+
 input::placeholder {
 	color: #CE9898;
 }
@@ -100,7 +108,7 @@ input::placeholder {
 }
 
 .input-control.error input {
-	border: 1px solid  #F96464;
+	border: 1px solid #F96464;
 	background: url("images/icon-error.svg") 79% 50% no-repeat;	
 }
 
@@ -111,6 +119,12 @@ input::placeholder {
 
 .input-control input:focus {
 	outline: 0;
+}
+
+input:focus,
+input:active,
+input:hover {
+	border: 1px solid #F8BFBF;
 }
 
 .btn {
