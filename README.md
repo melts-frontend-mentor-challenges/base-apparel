@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/base-apparel-coming-soon-challenge-solution-Skr7q-tmc
 - Live Site URL: https://melt-base-apparel.vercel.app/
 
 ## My process
